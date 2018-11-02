@@ -1,8 +1,10 @@
 # first argument, train or test. Train is to get the train data.
 # second argument, is the number of client
 
+echo "Start to run loops in background"
 tmux send -t loop 'cd /home/tdai1/ottertune/client/driver' ENTER
 tmux send -t loop 'sudo fab run_loops:max_iter=100' ENTER
+echo "Finished running loops"
 
 if [ $1 = "train" ]
 then
@@ -12,3 +14,4 @@ else
 fi
 
 sudo rm /home/tdai1/results/*
+echo "Finished"
