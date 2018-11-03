@@ -12,10 +12,9 @@ echo "Finished resetting ottertune"
 
 echo "Begin to load tpcc database in background"
 ./reload_tpcc.sh
-echo "Finished to load tpcc database in background"
 sudo fstrim /
 
 # after above all this, log into the website and create the session you need,
 # and set the upload code in driver_config
 echo "All initialization complete. Please create session on website and setup upload code."
-echo "Then run run_experiment_2.sh"
+echo "After tpcc is loaded (check if there is a tmux session called longrun), run run_experiment_2.sh"
