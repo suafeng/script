@@ -6,6 +6,9 @@ echo "Finished setting kernel knobs"
 # may not need to recreate the ottertune db. When we only
 # change the value of client, no need. But still recreate it anyway
 
+# remove all results in current results folder (/home/tdai1/results)
+sudo rm /home/tdai1/results/*
+
 echo "Begin to reset ottertune"
 ./recreate_ottertune_db.sh
 echo "Finished resetting ottertune"

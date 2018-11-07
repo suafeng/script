@@ -4,8 +4,8 @@
 # second argument, number of client
 # third argument, number of iteration
 
-# need to change 
-
+# remove everything in upload_output before
+sudo rm /home/tdai1/ottertune/client/controller/upload_output/*
 if [ $1 = "train" ]
 then
     tar -xvzf /home/tdai1/$1_client_$2_batch_$3_result.tar -C /home/tdai1/ottertune/client/controller/upload_output
