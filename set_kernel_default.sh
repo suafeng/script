@@ -6,6 +6,6 @@ sudo sysctl -w vm.dirty_writeback_centisecs=500
 sudo sysctl -w kernel.sched_migration_cost_ns=500000
 sudo sysctl -w vm.overcommit_memory=2
 sudo sysctl -w vm.overcommit_ratio=50
-sudo sysctl -w kernel.sched_autogroup_enabled=0
+sudo sysctl -w kernel.sched_autogroup_enabled=1
 sudo sysctl -w vm.nr_hugepages=180
 sudo sysctl -w vm.nr_hugepages=180
