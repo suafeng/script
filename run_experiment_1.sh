@@ -1,7 +1,7 @@
 #! /bin/bash
 
 echo "Begin to set tunable kernel knobs to their default values"
-sudo ./set_kernel_default.sh
+sudo ./set_kernel_start_point.sh
 echo "Finished setting kernel knobs"
 # may not need to recreate the ottertune db. When we only
 # change the value of client, no need. But still recreate it anyway
